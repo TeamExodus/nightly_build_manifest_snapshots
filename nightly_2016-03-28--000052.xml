@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://android.googlesource.com" name="aosp" review="android-review.googlesource.com" revision="refs/tags/android-6.0.1_r22"/>
+  <remote fetch="ssh://git@github.com" name="github" review="review.exodus-developers.net" revision="EXODUS-6.0"/>
+  <remote fetch="ssh://git@github.com" name="roomservice" review="review.exodus-developers.net" revision="EXODUS-6.0"/>
+  
+  <default remote="github" revision="EXODUS-6.0" sync-c="true" sync-j="4"/>
+  
+  <project name="ContentGuard/AntiPiracySupport" path="packages/services/ContentGuard" revision="da4f431a2e5a5e3be86aab8fcff5024b91dc53a0" upstream="Android-6.0.1"/>
+  <project name="Exodus-Devices/qcom_sepolicy" path="device/qcom/sepolicy" revision="fb7f94620842eef3104f17a117e634fb157943c6" upstream="EXODUS-6.0"/>
+  <project name="Exodus-Vendors/qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" revision="6a9329fc5dfa1e160f6f9dac00eff630de14036b" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/bionic" path="bionic" revision="efb9f8a37d1a9aa11ba1b72af6c8acbe76db89e9" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/bootable_recovery" path="bootable/recovery" revision="6ddb49dc894dda3834cce80681609b01c68832a1" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/bootable_recovery-exodus" path="bootable/recovery-exodus" revision="a841a3ffca6b862562e3d5398a68649cf8eeadfb" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/development" path="development" revision="381e7bb40426c1869c336418ac4caede447400c5" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_asus_flo" path="device/asus/flo" remote="roomservice" revision="56941f95974c641b87e14444cd138bd0d150dca0" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_cyanogen_msm8939-common" path="device/cyanogen/msm8939-common" remote="roomservice" revision="ea83fa69fabc646ac32e02963807778163e833fb" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_htc_flounder" path="device/htc/flounder" remote="roomservice" revision="6ebf47316a916ecb31ff914557c03cf2acded57c" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_huawei_angler" path="device/huawei/angler" remote="roomservice" revision="cde0176a7f429b0948b12c67122ced01bdd78939" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_bullhead" path="device/lge/bullhead" remote="roomservice" revision="5df27c2c7b0f50b70eb7f4aaf780c7a4d85af5e8" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d800" path="device/lge/d800" remote="roomservice" revision="961c352e57988ca2a842a3f9b46942319ee1a9bc" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d801" path="device/lge/d801" remote="roomservice" revision="d3e6851d0e68005b0e2ebfcbed28a0b15832e713" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d802" path="device/lge/d802" remote="roomservice" revision="eadc76739b1e011dc103a86914de4455c01de361" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d803" path="device/lge/d803" remote="roomservice" revision="84cfaf022dd88267640cc535914fc49d4d8fe460" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d850" path="device/lge/d850" remote="roomservice" revision="16edc3f0b4f4fb9f394b3077c31a8eb78287a7e9" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d851" path="device/lge/d851" remote="roomservice" revision="07cbee03b59f7025699d649cb63424461131f6ce" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d852" path="device/lge/d852" remote="roomservice" revision="8251795ce660f4bd3c971172f1c59f462cf7f34d" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_d855" path="device/lge/d855" remote="roomservice" revision="09760cd36b482be688c0d35ffde49de0c0ff5347" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_f400" path="device/lge/f400" remote="roomservice" revision="da18489190cf458205a9af003ada2c1abfd1c36a" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_g2-common" path="device/lge/g2-common" remote="roomservice" revision="3c31d79f5cfed898147e3789013ca71acf51e140" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_g3-common" path="device/lge/g3-common" remote="roomservice" revision="25c3a2e888e0053cb345124d46a6a6e6774e91ab" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_hammerhead" path="device/lge/hammerhead" remote="roomservice" revision="99cdafb74725d8406f15990cacad7233a0fc7504" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_ls980" path="device/lge/ls980" remote="roomservice" revision="33c4d47d2f6f98a730f01554e64b853823c0b7c6" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_ls990" path="device/lge/ls990" remote="roomservice" revision="f97d23ce53be48c51450e72dfdc5765eace82e43" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_mako" path="device/lge/mako" remote="roomservice" revision="2a7675dac03d310d53787b4d418f51b47319a10d" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_vs980" path="device/lge/vs980" remote="roomservice" revision="364de647ef8f6a255242f9003e0550ad656d3dcf" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_lge_vs985" path="device/lge/vs985" remote="roomservice" revision="ebd69e2a40a7781435b4d54d88b8c47d85978ecc" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_moto_shamu" path="device/moto/shamu" remote="roomservice" revision="09d85e6175d0bdbfbaf542319e1c5c5e0bd793af" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oneplus_bacon" path="device/oneplus/bacon" remote="roomservice" revision="491bdbda14d6a3745405702b63a1ef0d89d4c48a" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="roomservice" revision="dfec7a82a0f9734340969b01f325af595f791d86" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oneplus_onyx" path="device/oneplus/onyx" remote="roomservice" revision="6f0e72dec3f5cbb6de817815c9e69e2ddd51914d" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oppo_common" path="device/oppo/common" remote="roomservice" revision="530f30710a68317aa13e8e9a47adc0c5a742177c" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oppo_find7" path="device/oppo/find7" remote="roomservice" revision="eeea86559fd0ca8c4b86b131d25c69339e87e3c8" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oppo_find7-common" path="device/oppo/find7-common" remote="roomservice" revision="9af2bcc25a1856d770b6b7fb1108f609df888634" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="roomservice" revision="6b4bb49b9951ab7666d7948dd69b3be403e728ca" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_qcom_common" path="device/qcom/common" remote="roomservice" revision="a20d92ee6fa9d61ba993eb6aaea1714fa08d10c4" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/device_yu_tomato" path="device/yu/tomato" remote="roomservice" revision="2d72dfefc487478b73d20477418d54ba96ca089f" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/drop_wallpapers" path="packages/apps/ExodusWallpapers" revision="a510e3edf070c33351a307ddd09d642212b27ba7" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_android-clat" path="external/android-clat" revision="11ffa2451829c9bcb86f00c1cfff9f3be4b7064c" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_android-mock" path="external/android-mock" revision="430842c5090ed78aae44ba08dd55ee648c852f56" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_android-visualizer" path="external/android-visualizer" revision="38d5cf3f9345faba0d97a32ab37dc97a2f36cf1a" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_android_support-prebuilt" path="external/android/support-prebuilt" revision="a88269c345c1ab38f101e44884a455c749f641b4" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" revision="9fb40f0af51b80751eff7da8094d0e946f1935a0" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" revision="d1cd68eca1bbcfe523b365edc9808fe79cc20c90" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" revision="85290ef0527d2f4cf82fdc3ffc290c970ca57f6b" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_apache-http" path="external/apache-http" revision="8839806b8a13e0f76bee45e9a164ef2cd96bf2fd" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_bash" path="external/bash" revision="0438fe741ee1134d4ea9cebdc428e47d377a81aa" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_boringssl" path="external/boringssl" revision="ac305f5b3b6569d012faefdaa26013b802518f6f" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_bouncycastle" path="external/bouncycastle" revision="273e9d09007701ecb5486e6552dcd2cba23f23ee" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_brctl" path="external/brctl" revision="85130b403dea07b2230efed3287236fa0caefb1c" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_busybox" path="external/busybox" revision="90eae30b7266cb8fdd1da926b829f87e4b949345" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_connectivity" path="external/connectivity" revision="9a6a5e7b56f1e67c7e585d75f18eacc54398695d" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_curl" path="external/curl" revision="1e63af5a4f8b28fe02d3ebcc0fa5e9099d4a334a" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_dhcpcd" path="external/dhcpcd" revision="a38d6f2b74d5953b3d7726415aef907eb3cde1f9" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_e2fsprogs" path="external/e2fsprogs" revision="d377698f96e3aa8cedaef5fd10c15de2bc614a7b" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_ebtables" path="external/ebtables" revision="b070104dcb72b99825d645e9e41a5362bd4ff735" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_elfutils" path="external/elfutils" revision="84c2ce7fcb4b7d8694f0fcce19b910ae9eb84252" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_exfat" path="external/exfat" revision="2709ac30bea33f1675fb5391f5f629fa2877119d" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_f2fs-tools" path="external/f2fs-tools" revision="93021ebabbf736ac4eb6d6fdf05c148557a7150f" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_ffmpeg" path="external/ffmpeg" revision="ea5478ca9e27ffe4c19edb08a896f5d075732f6e" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_flac" path="external/flac" revision="63591a0e92747794fa656961af3b7a1ec71f5cd1" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_fsck_msdos" path="external/fsck_msdos" revision="10e42bba874acde198c4c028247790b23b7ab6a3" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_fuse" path="external/fuse" revision="15667c0c09d9c07e8b9786d4e49cf9df0f61aae9" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_gmock" path="external/gmock" revision="31293b8f01859b67f23f2883485fc2fa11a79e7d" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/external_gptfdisk" path="external/gptfdisk" revision="81f98ae8b726c85cdc86ec6d1cef6d776eeab84d" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_gson" path="external/gson" revision="4bc2ec0628f74bc24c3820951f4ca2c91e516f7a" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_guava" path="external/guava" revision="54e454bbd1b74ba763c57a1a4ff43bdd5894f0e4" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_htop" path="external/htop" revision="841159c272ac08b1cd5bdef5167a8ce11383fbb5" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_icu" path="external/icu" revision="025b937d6a9c1377e61fe54fc4fe35fe45734e0c" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_iproute2" path="external/iproute2" revision="55cd570bddd154603e70f990a9ebbeb36453740c" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_ipsec-tools" path="external/ipsec-tools" revision="051cb703abcee41c1d24f76aec81da90a5470441" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_iptables" path="external/iptables" revision="de2fa7133374831bcb5080a43e567e2e41f84ee7" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_jemalloc" path="external/jemalloc" revision="ef88c54da26ca5e5f72e4d36b544256f991981dd" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_jpeg" path="external/jpeg" revision="56afb4bad3a175fb3150c0b78ec5f9fce03e45b1" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_koush_AndroidAsync" path="external/koush/AndroidAsync" revision="58688ac2fa2668bf84c7e38410bd2c9f7a8123ee" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_koush_ion" path="external/koush/ion" revision="9190f789ab79f42b461230e5249b64a5bee8e603" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_libavc" path="external/libavc" revision="741790bbbddabb3b01fbe660d9ea6af2c160eadf" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libncurses" path="external/libncurses" revision="c1bcd6dd9af6865867a3d6716e4c1a45021a90e5" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="484024be0704ff670076d6b9f0e1b04865c6c7e2" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_libnfc-nci" path="external/libnfc-nci" revision="ece8beefbbe6ef861617533ea91278eb74fa6db3" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_libnfc-nxp" path="external/libnfc-nxp" revision="76f8fa7177767cb377f9212e207e3ac16f9b8d48" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libnfnetlink" path="external/libnfnetlink" revision="80ba60f6a117f73fb4497615511dac44870eacdb" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libphonenumbergoogle" path="external/libphonenumbergoogle" revision="6d3030c03cc39c4921b77dbf3f4905be41585881" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_libpng" path="external/libpng" revision="6cdd1615dba8eaa76ede206716c75c1a0459eb43" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libtar" path="external/libtar" revision="4621ec3761b8bfc424a1ae0549c7971846941406" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libtruezip" path="external/libtruezip" revision="45ac3d07b5a4753bd1abc9fa38fd48221312a3d9" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libusbx" path="external/libusbx" revision="b0b31904b50218c17dad7b9d893d3b6ab7a26bfa" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs,libxml2" name="TeamExodus/external_libxml2" path="external/libxml2" revision="16304977ca877f04b55b1f4a0848107f36af26ad" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_libxslt" path="external/libxslt" revision="98f5140c33273d3bd67ca03566f8417406001016" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_lz4" path="external/lz4" revision="7cb39f582a924ee6bb0125da96e7e1f2bb3d718d" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_lzma" path="external/lzma" revision="04c7fe1e2cc9987ca82b693c1607c560e2d50f8a" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_lzo" path="external/lzo" revision="409e081d386c767ea872709efcc0adec20457f6d" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_mksh" path="external/mksh" revision="0b13634a530e18b4ff95a5bd81efd3e9e05dfff9" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_mm-dash" path="external/mm-dash" revision="d02faf87fec437ae7fdd996abb33f1e92d6f4d6f" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_nano" path="external/nano" revision="b6b3db7812180de1fa47d3def13cbd71d7f2f3b5" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_ntfs-3g" path="external/ntfs-3g" revision="137b2b77ec6fcaae23ad089a46aa6e5705a945b8" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_okhttp" path="external/okhttp" revision="5d943cc36012093fc85878dd9c868baca82abbf3" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_pigz" path="external/pigz" revision="b017edd756ff80d8b3beac8652bb227e021b91f2" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_ppp" path="external/ppp" revision="049557952e8ce4912fa7d2be8c950ca0bbed3ca4" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_proguard" path="external/proguard" revision="7bb31f8cc2673a314c7e0d1afa3bfddddd229f46" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_protobuf-c" path="external/protobuf-c" revision="f5acb16b4e8b57f5be4083960023982443bddbca" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_rsync" path="external/rsync" revision="a36d905455cc35d7092e8429f468df1f8d922b4e" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_sepolicy" path="external/sepolicy" revision="885f9867c18606b806843a062040e890eb6bf40d" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom_msm8x26" name="TeamExodus/external_skia" path="external/skia" revision="cb67648d23a4af556d2371d4420ae61b7914bc7b" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_sonivox" path="external/sonivox" revision="6e3750dfde20bd5000e27541934d4a7626bcca0d" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="roomservice" revision="3f339d21936ede85b4f1507559c350908ec2ec75" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_speex" path="external/speex" revision="c98e7047489a55c3bf9d5e3ab0db3ef20a1cb9b0" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_spongycastle" path="external/spongycastle" revision="fc2a21c6321063531b273385708adc81a8e51a31" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_sqlite" path="external/sqlite" revision="776d1b24e73fd70d6faac974b61fbe7ca7bb0672" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_stagefright-plugins" path="external/stagefright-plugins" revision="32973f0abd8e60ef24247ac612396d979cfcc5af" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_stlport" path="external/stlport" remote="roomservice" revision="176973f0a182bab49f43993aefa34e0d76790ac9" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/external_strace" path="external/strace" revision="a0ef057d0e1e8bfd4a4cb84113668f516ce8ba57" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_tinyalsa" path="external/tinyalsa" revision="6816df2e7296082a94585a445d65882f122cdc42" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_tinycompress" path="external/tinycompress" revision="10246f5f8d275035c061b8da92b5b037d152f667" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_tinyxml2" path="external/tinyxml2" revision="9d9aed466bbe37c993de79de71b6afbf091f99af" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_toybox" path="external/toybox" revision="ac113872b8e364c7b00a214291ae7b05ee9538ee" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_unrar" path="external/unrar" revision="1a6e12b695ae2983bffcce251d4d5f8c2e509618" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_vim" path="external/vim" revision="d3985c08268db9bc8ae64de293e27cd4c6eba6f7" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom_msm8x26" name="TeamExodus/external_webp" path="external/webp" revision="020d882c45eef30767609b5e54868e21407a2822" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_wpa_supplicant_8" path="external/wpa_supplicant_8" revision="49b4417da9e2a0ae294f038b08dc7a198f2e5430" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_yaffs2" path="external/yaffs2" revision="7b55a9a7cb7c40289d1bb6cd5b39775be524ddc1" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/external_zip" path="external/zip" revision="ac4f560c264cef168d4834f50a51538d3e422739" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/external_zlib" path="external/zlib" revision="cd52de7ad8687eb30e662c7cb00ac9998abe314f" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/frameworks_av" path="frameworks/av" revision="083bb715da727bd59eb067061100dcbfdb433b96" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_minikin" path="frameworks/minikin" revision="3693f124b5513257c07fac13e23d0bc0749b4d2a" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/frameworks_native" path="frameworks/native" revision="1b4c3e14f976726f914fe006581405024e7e33c6" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_opt_bluetooth" path="frameworks/opt/bluetooth" revision="614d2e0ffd618668d2d9593eeea460960b140b15" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_opt_chips" path="frameworks/opt/chips" revision="3d4eb92e92b8660c7ee8dec8384c309f76ca15b9" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_opt_datetimepicker" path="frameworks/opt/datetimepicker" revision="fbf8aa3e3993317e94f25406bd2d872246c237bf" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/frameworks_opt_hardware" path="frameworks/opt/hardware" revision="cacd6b2341ec3af1eececc28f789272fb7e7460b" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" revision="6db9c2aef1bc8ea5812f4a6064cfaacb89fae3cc" upstream="EXODUS-6.0"/>
+  <project groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_opt_net_ims" path="frameworks/opt/net/ims" revision="dc8edede60f1c504d4bfa213a1ac0313e0da5382" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" revision="b80b72a438bac753f3effeaa843296d1b9e9aa15" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_opt_photoviewer" path="frameworks/opt/photoviewer" revision="968eaa61d241fbaaaf216ab199fca9e490335624" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/frameworks_opt_telephony" path="frameworks/opt/telephony" revision="463dd4b764b9c2edb296255abf0b0d3620e4bec3" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_opt_vcard" path="frameworks/opt/vcard" revision="22b057b0863763c2f4634935dd09c15e3f1e11d7" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/frameworks_rs" path="frameworks/rs" revision="760eb497fbb9a1d8d04c3394209c0afcba1a403a" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_support" path="frameworks/support" revision="63550b1223d16c0c09251028fe5c7e22839f9a78" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_webview" path="frameworks/webview" revision="f9b6f5bf65f9105c2b993dbe7a718a3375db8107" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/frameworks_wilhelm" path="frameworks/wilhelm" revision="691aa3bf44016f7318295ef77a2416642b16b61b" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/hardware_broadcom_libbt" path="hardware/broadcom/libbt" revision="ebec4bf621655c52146c09d3c738aab8912ba117" upstream="EXODUS-6.0"/>
+  <project groups="pdk,broadcom_wlan" name="TeamExodus/hardware_broadcom_wlan" path="hardware/broadcom/wlan" revision="d1b15b1a7cb8592e68d0a11e3d4f41caedb61f4c" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/hardware_cm" path="hardware/cm" revision="29efe6b33b4421ce1a28f3e4a612c805219faa82" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/hardware_cyanogen" path="hardware/cyanogen" revision="c6400e608e4dba711ce8d0b1b999a9b4846ed89b" upstream="EXODUS-6.0"/>
+  <project groups="intel" name="TeamExodus/hardware_intel_img_hwcomposer" path="hardware/intel/img/hwcomposer" revision="f628cdce77904db3db817e5def1a3cb4d9165dfa" upstream="EXODUS-6.0"/>
+  <project groups="invensense" name="TeamExodus/hardware_invensense" path="hardware/invensense" revision="93a834a300174b1f17f5f79dbc62da7f7458386d" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/hardware_libhardware" path="hardware/libhardware" revision="1760a6fac2c09d484fd400bc72bdc20b98f63b2a" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="553f2e4eb7ba12e733ca774733111c4d6e93785e" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_audio" name="TeamExodus/hardware_qcom_audio-caf_apq8084" path="hardware/qcom/audio-caf/apq8084" revision="a9bf1aa5507d94c89ea3e074d7198e8eb3d1f57b" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_audio" name="TeamExodus/hardware_qcom_audio-caf_msm8916" path="hardware/qcom/audio-caf/msm8916" revision="5232764bb67c66e86d958c61bcd615e3dde22c6c" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_audio" name="TeamExodus/hardware_qcom_audio-caf_msm8960" path="hardware/qcom/audio-caf/msm8960" revision="ef63860862a1ea7225868158f5d8c8a8c70a9596" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_audio" name="TeamExodus/hardware_qcom_audio-caf_msm8974" path="hardware/qcom/audio-caf/msm8974" revision="a99990a791440ecf37e4ccf85dd8d87be455aaf4" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_audio" name="TeamExodus/hardware_qcom_audio-caf_msm8994" path="hardware/qcom/audio-caf/msm8994" revision="09eeea9f7342de46df1a539a9ef846a13c34a765" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_audio" name="TeamExodus/hardware_qcom_audio_default" path="hardware/qcom/audio/default" revision="e194a9bb450610b22ccbd02f0a2e467312fa95da" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_bt" path="hardware/qcom/bt" revision="6b1e6a67b52644ba0e44d64534c1cd75b62329fa" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_bt-caf" path="hardware/qcom/bt-caf" revision="013822b82ff4442b6e71c1ca5ce97d1e79a67400" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_camera" path="hardware/qcom/camera" revision="7bd93dc7d7466fcdd24b7e620221ae19a361dd58" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom,qcom_display" name="TeamExodus/hardware_qcom_display" path="hardware/qcom/display" revision="80a696defbc1f1f22eb4b7501568d3715b163daa" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom,qcom_display" name="TeamExodus/hardware_qcom_display-caf_apq8084" path="hardware/qcom/display-caf/apq8084" revision="2d84ec706d3bf3a99dd8cf19248ceefd5e63df84" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom,qcom_display" name="TeamExodus/hardware_qcom_display-caf_msm8916" path="hardware/qcom/display-caf/msm8916" revision="ba01aa8a2e9e54ba08d10f6bf5b4712ed4af06bc" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom,qcom_display" name="TeamExodus/hardware_qcom_display-caf_msm8960" path="hardware/qcom/display-caf/msm8960" revision="602ea004c37bb3bc5d36b321059430d3ea41a297" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom,qcom_display" name="TeamExodus/hardware_qcom_display-caf_msm8974" path="hardware/qcom/display-caf/msm8974" revision="fb8a60a379448b2e726567fe7ed343a943f0de47" upstream="EXODUS-6.0"/>
+  <project groups="pdk,qcom,qcom_display" name="TeamExodus/hardware_qcom_display-caf_msm8994" path="hardware/qcom/display-caf/msm8994" revision="45da2c85d7657f7bbe4d62bdeb71be4bf8fd4074" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_fm" path="hardware/qcom/fm" revision="93ad52ebc6b5b80180df867f59d9c5c007be538b" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_gps" name="TeamExodus/hardware_qcom_gps" path="hardware/qcom/gps" revision="12249ca5d07d4a3807f7b91ed23b4814edb6ab96" upstream="EXODUS-6.0"/>
+  <project groups="qcom,qcom_keymaster" name="TeamExodus/hardware_qcom_keymaster" path="hardware/qcom/keymaster" revision="501eee413494388978dcac4f1866dccf8e5b9993" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_media-caf_apq8084" path="hardware/qcom/media-caf/apq8084" revision="29c9c7544c12b92f248f559ac3cecd2a7e94b8d7" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_media-caf_msm8916" path="hardware/qcom/media-caf/msm8916" revision="f0608dbe798abe43b9d2262dcce2b9616947533a" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_media-caf_msm8960" path="hardware/qcom/media-caf/msm8960" revision="c4e89aca65da7798d5fb99f841c4f0ca791cc641" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_media-caf_msm8974" path="hardware/qcom/media-caf/msm8974" revision="4a7b8a61c177cf382787f79d2a0825dfe2256ef0" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_media-caf_msm8994" path="hardware/qcom/media-caf/msm8994" revision="d4212b9f55594ea15010bc6d50328ce31b7e7da1" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/hardware_qcom_media_default" path="hardware/qcom/media/default" revision="91ea6a977f5fe27abbadaf418c77aec9548a9f7b" upstream="EXODUS-6.0"/>
+  <project groups="qcom_wlan" name="TeamExodus/hardware_qcom_wlan" path="hardware/qcom/wlan" revision="4ecda47328cbd62c66ba941807fea0f232954c98" upstream="EXODUS-6.0"/>
+  <project groups="qcom_wlan" name="TeamExodus/hardware_qcom_wlan-caf" path="hardware/qcom/wlan-caf" revision="1dea7b211e5313ae0192f1fe82403e5dbcfd3dcb" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/hardware_ril" path="hardware/ril" revision="b2d904d75d9fc3f069f7d46ff700a5c09cfa1544" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/hardware_ril-caf" path="hardware/ril-caf" revision="cb98a0fd8db810e4188c17f84f51c31246e75a37" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/hardware_samsung_slsi_exynos5" path="hardware/samsung_slsi/exynos5" revision="bb99f0edf0273f061bbd9ca7765a727b2ccaab64" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/hardware_ti_omap4" path="hardware/ti/omap4" revision="a70a064a8d6759faf115ef454715deba09d775df" upstream="EXODUS-6.0"/>
+  <project groups="omap4" name="TeamExodus/hardware_ti_omap4xxx" path="hardware/ti/omap4xxx" revision="b94c6fe6065530b9b10ac3be53a35906e81a155a" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/hardware_ti_wlan" path="hardware/ti/wlan" revision="107d8fce2f9201d4b8845c11b65f24bccbb2a841" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/hardware_ti_wpan" path="hardware/ti/wpan" revision="bcf2967acf1a644a59cb113891ad618b1a4cad5f" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="roomservice" revision="ff2ffcda17e7d74feabfe1e69ec434768d0f328e" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_google_msm" path="kernel/google/msm" remote="roomservice" revision="60a8e2d3f3b9261a8bf56d73cbd522bf2ea555ce" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_htc_flounder" path="kernel/htc/flounder" remote="roomservice" revision="0fcdbd80fe146213c0aa2a363842164e0d274657" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_huawei_angler" path="kernel/huawei/angler" remote="roomservice" revision="c319df5645f1f9e4b4f0ad896a32bfd0d8858f4e" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_lge_bullhead" path="kernel/lge/bullhead" remote="roomservice" revision="4f3fb4c12c44154ecce2cd70f4521b6fb224a807" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_lge_g3" path="kernel/lge/g3" remote="roomservice" revision="995f5378f36eb2a47fd7d64efe8b81030562d92f" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="roomservice" revision="c46bfe85722b9e0386f1e32c7aa026250e32e886" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_lge_msm8974" path="kernel/lge/msm8974" remote="roomservice" revision="55637db6c0bbcc4af86e95c0e20b2e703657029e" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_moto_shamu" path="kernel/moto/shamu" remote="roomservice" revision="11a138ae398049086f3afa3b52f6b6ae4ae739d6" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_oneplus_bacon" path="kernel/oneplus/bacon" remote="roomservice" revision="a279f7d170752f136f9ae01b1a0b3987cc095340" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="roomservice" revision="7f3020293dc9c6250df51eda5c4525db3c7fcd45" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="roomservice" revision="40bc616a5d2f2810649c08d4c9397f1bfdb8c679" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/kernel_oppo_find7" path="kernel/oppo/find7" remote="roomservice" revision="fedb80f4e1fe3458e54769f56d24ef81f027beb3" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/libcore" path="libcore" revision="03666f77547a7a545231355f4beefb6351774eb5" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/packages_apps_AudioFX" path="packages/apps/AudioFX" revision="452b0e2b5265af1382b0a4e7533cc8ddf5bfab4b" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="3135ade77330d640eb8a3ab89ffacf8aec2062a8" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_apps_Bluetooth" path="packages/apps/Bluetooth" revision="b9cc2cc4cb4ce8e7751ee3c64dec59b9fde9d111" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="8ef0d53c50111bf22e2bfb6f1d559076541a2a58" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="2b096298ec529a305427f13482976659a30b9d0c" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="64eca5ce823717d6fd7c388036cb6b4bffa78843" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="22a73e18697339f3380f83c5f058bd0cd667862e" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Contacts" path="packages/apps/Contacts" revision="4db2452b14ed45521f5053e292a0df0b5b779679" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" revision="77e76e1b5e7cbcd15fa194c19f4468d558ece014" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/packages_apps_DeskClock" path="packages/apps/DeskClock" revision="063b277e4f1df53e8cce767c1a0e76f36c265ac1" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Email" path="packages/apps/Email" revision="a65a4ff080934383c05820982463ad5fb7bcc522" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Exchange" path="packages/apps/Exchange" revision="6e0fe67af1ee68a211183b9f5c64d277a98ac4de" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_FMRadio" path="packages/apps/FMRadio" revision="827e27d8792bd88ae7ffdca5daed089f171b130f" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Gallery2" path="packages/apps/Gallery2" revision="ae4e264b6378730bbe7c09925cc96fe1e7c106c2" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_HTMLViewer" path="packages/apps/HTMLViewer" revision="0476898b43cf50152e058835bbf1d242355ce0d7" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_InCallUI" path="packages/apps/InCallUI" revision="3157e3da5ab4b31f3846810c8a98fc9803d38f01" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_KeyChain" path="packages/apps/KeyChain" revision="11d75909834d95f2421f367222c3b58d58932d79" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Launcher3" path="packages/apps/Launcher3" revision="75398a82942f699a8eee8d275a508512d4532a9b" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="19051478a615c7eb6f545bef6a0485547888e829" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Messaging" path="packages/apps/Messaging" revision="e63fb18aed5aa329f52d2a1b05e75fa41e36c1ed" upstream="EXODUS-6.0"/>
+  <project groups="apps_nfc,pdk-fs" name="TeamExodus/packages_apps_Nfc" path="packages/apps/Nfc" revision="940a41491dfbd12e49b41ed0d744613578d63d15" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_OpenDelta" path="packages/apps/OpenDelta" revision="5b5a6ac594730f29445870cd6ee78778fe8d4f12" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="883a9eb8639a235b6a4a76ac51343b7a638c0bcd" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="983ebb3cdeeae69feeca27e233ba123865a6a1b4" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Snap" path="packages/apps/Snap" revision="74256ddae96cc9086ed4e709ca0879340322bac4" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" revision="0626bf872486a47c75c89afa2395bbbba6bbbab4" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_SpeechRecorder" path="packages/apps/SpeechRecorder" revision="eac094461917bcca0ac10bf11d3fed97b4241d43" upstream="EXODUS-6.0"/>
+  <project groups="apps_stk,pdk-fs" name="TeamExodus/packages_apps_Stk" path="packages/apps/Stk" revision="49e947a463c1364bbc396256cc8d9f8bef14f390" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Tag" path="packages/apps/Tag" revision="d69e0afa5ee679157967a995528040f1f4d37feb" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_Terminal" path="packages/apps/Terminal" revision="114b09911d2d345b68b6d0cc1420c875de016c7f" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_apps_UnifiedEmail" path="packages/apps/UnifiedEmail" revision="3adfc5949f4e2ff2d64f653ec3536b5eed9386fa" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/packages_experimental" path="packages/experimental" revision="7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="51e9ac8e98368bfeb4636ab4a25452007be173e6" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" revision="f01f45d59bc8dd8f8a8475dce3815080146e9a2a" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_providers_CalendarProvider" path="packages/providers/CalendarProvider" revision="73e9393b52447b6feb89afd2c66183ecf2924b2e" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_providers_CallLogProvider" path="packages/providers/CallLogProvider" revision="95c78f329ffa96c7bb12d0493959904308055903" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="7cf565d9744a9b3e959672f9329db966601c68c5" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" revision="746e85bdf04c8d5d6ae31411ead30ebe7cdb8f8e" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_providers_MediaProvider" path="packages/providers/MediaProvider" revision="4f63142c489c255f231ef45c8e7bfff640284bb5" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_providers_PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="96d0a80af45923767baf449fc8c735c2f71d64ae" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" revision="2b4632a7315fe79f6d8d45369499a87529d945f2" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_providers_TvProvider" path="packages/providers/TvProvider" revision="1e54f8355bf86d71e04fb17ab46e56fee7f26666" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_providers_UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="2dd478296e3360fa77cf73bc4e27a0b776982511" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_screensavers_Basic" path="packages/screensavers/Basic" revision="fd7bef3f8f4231100c6ef4aacc47a8f5e8d59333" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable" revision="14c686b1237c4e378a3c9eba34c9764f143e0b01" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_screensavers_WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_services_Mms" path="packages/services/Mms" revision="ceef5697ab84fb5b0416b3c396ab444a9cc83e63" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_services_Telecomm" path="packages/services/Telecomm" revision="a0bdb68f9d90a436613caae65ebae053790a0ab4" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/packages_services_Telephony" path="packages/services/Telephony" revision="b526afe1d741d31ff196f48cf18247afa41b6718" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_wallpapers_Basic" path="packages/wallpapers/Basic" revision="68f86ae025f396a2d6826bbc7569b79933577a94" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" revision="f5673fed275fed8329a5dffa8ddcc15ca279d1c9" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/private_art" path="art" revision="474f229d266fd52bd6b4eb1b67149226fc85f8d9" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/private_build" path="build" revision="359a8cbefdc42eda1f3fbc507180e991837edd95" upstream="EXODUS-6.0">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  <project groups="pdk-cw-fs,pdk-fs" name="TeamExodus/private_frameworks_base" path="frameworks/base" revision="2f8d692462ebd58151221e7d0ab120ec76969e33" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/private_packages_apps_Dialer" path="packages/apps/Dialer" revision="35d853f0ac54745a68643b604e302ac7f1850238" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/private_packages_apps_ExodusUpdater" path="packages/apps/ExodusUpdater" revision="88f6dfffc9ca811420b2a9dd1e65653dac06a3f7" upstream="EXODUS-6.0"/>
+  <project groups="pdk-fs" name="TeamExodus/private_packages_apps_Settings" path="packages/apps/Settings" revision="7b9a57c4b23033024b8238aa978ac922d21cbd20" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/private_platform_manifest" path="manifest" revision="cbcb1e33d84644d5ab675f516963e359b2b0e96c" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_bt" path="system/bt" revision="e91ea4e3e53b521b15447ff8f0ca5a2dcb0545ac" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_core" path="system/core" revision="f3dc98d208455ebd2e02b909c4260439ddbbc644" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_extras" path="system/extras" revision="71d20e61a980556d5db5ee29750f90a72c0018da" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/system_extras_su" path="system/extras/su" revision="c9d292e5d362893ce735836439f0d236579e9c38" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_keymaster" path="system/keymaster" revision="550136a588047bb677217a2d696e0b23f355f90e" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_media" path="system/media" revision="3c646b98192b82735a25121e476ed098bc7d0b23" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_netd" path="system/netd" revision="213704eff8cac27a3fb5dc77fd6c2089520d4f56" upstream="EXODUS-6.0"/>
+  <project groups="qcom" name="TeamExodus/system_qcom" path="system/qcom" revision="fc46d223c635380bcd0a6fd04f719f89f30ba9aa" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_security" path="system/security" revision="3825443cf4a3fb37646ca571084e9be203d80dcf" upstream="EXODUS-6.0"/>
+  <project groups="pdk" name="TeamExodus/system_vold" path="system/vold" revision="8da562152202ca9598846a228cf73e0afe88c449" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_exodus" path="vendor/exodus" revision="de2e8b22c0f98748c2b18c5e7a669dd1d4718939" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_exodus_devices" path="vendor/exodus/devices" revision="63e8a1d06d34ca1f603d4f84996ef5a926185adf" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_huawei_angler" path="vendor/huawei/angler" remote="roomservice" revision="540ec3cda5b96740b4c3585ad887263a91bde107" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_bullhead" path="vendor/lge/bullhead" remote="roomservice" revision="fa57ff62dbf0bcab57775b2d7d25cab5cae9aa1e" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d801" path="vendor/lge/d801" remote="roomservice" revision="a91344e9e752aba1d64a495e6f9f99505ceb03dc" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d802" path="vendor/lge/d802" remote="roomservice" revision="0f77ab4592022547f16fbaaad4b886e6da4e9022" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d803" path="vendor/lge/d803" remote="roomservice" revision="ca73ec0ad7ad05dad33383e784cebbb4632539d8" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d850" path="vendor/lge/d850" remote="roomservice" revision="b0c453b321b3f96df641e70b21dc18ebf409fd21" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d851" path="vendor/lge/d851" remote="roomservice" revision="0f216794f9abb2487f05f927c6d5cb01765660df" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d852" path="vendor/lge/d852" remote="roomservice" revision="315f9fb8639f16ec0a29ed2d3f0e54c9d50290a6" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_d855" path="vendor/lge/d855" remote="roomservice" revision="b82988b18833e772764a300f587182f923a1139c" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_f400" path="vendor/lge/f400" remote="roomservice" revision="5441d7b080b4141c06eabe4fe0b8c7ba9aa5f633" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_g2-common" path="vendor/lge/g2-common" remote="roomservice" revision="befded90adb011ced0d6180cc825c713063237c3" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_g3-common" path="vendor/lge/g3-common" remote="roomservice" revision="186eceeaaf9f4c415fb26b01bdcb3babd73c80b0" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_hammerhead" path="vendor/lge/hammerhead" remote="roomservice" revision="bd0c9a95eedba99fa8ecd36b615710dde7d203bf" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_ls980" path="vendor/lge/ls980" remote="roomservice" revision="91391dd0043c97de5798fdf91fa8d3f1259dd59f" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_ls990" path="vendor/lge/ls990" remote="roomservice" revision="6bbaab59e517db50caef2d418c6b2e23e4909d03" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_mako" path="vendor/lge/mako" remote="roomservice" revision="d813ee9afde3e6a393265a6d6426026544d35486" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_vs980" path="vendor/lge/vs980" remote="roomservice" revision="8dbd7d074354ede1aebec2b9f31e105ae5c77c5e" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_lge_vs985" path="vendor/lge/vs985" remote="roomservice" revision="d407d9f95a8216959d455d711e7b00fe445346b9" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_motorola_shamu" path="vendor/motorola/shamu" remote="roomservice" revision="1eb74ea7c67a67e100872e4335ce85dee0489137" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_oneplus_bacon" path="vendor/oneplus/bacon" remote="roomservice" revision="f04f7252e481e37d4f70db97dca1d0ed20e97184" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_oneplus_oneplus2" path="vendor/oneplus/oneplus2" remote="roomservice" revision="c10f85806896ee0638b3c6a26f409231a203eca9" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="roomservice" revision="31a5e3b9f2fab3242e9151c9a28da408d60448d4" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_oppo_find7-common" path="vendor/oppo/find7-common" remote="roomservice" revision="c80c3948a15599fd233f5fdd11d3f96cae8f4ec0" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_oppo_msm8974-common" path="vendor/oppo/msm8974-common" remote="roomservice" revision="ab6d4b2d7a684c4068cfe218ccf651da147e3b6f" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_qcom_opensource_time-services" path="vendor/qcom/opensource/time-services" revision="6efa6a5100fb0401a02f4df40b98c495a240ce33" upstream="EXODUS-6.0"/>
+  <project name="TeamExodus/vendor_yu_tomato" path="vendor/yu/tomato" remote="roomservice" revision="fe2cc82401820f1fa40f544c56d5f95939d746c6" upstream="EXODUS-6.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="device/common" remote="aosp" revision="762617a12642c9de3e3ce66b26f6c8b122c06e0f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/arm64" remote="aosp" revision="39249053f37b7f9633eb406af3dbedfea7bf8b3e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/armv7-a-neon" remote="aosp" revision="0e7af778b59c0ff590e21fcce8cfc9176dc0d13d" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/common" remote="aosp" revision="11c092a6cbfcf6207f07a9a8e3398e747e7f5461" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/goldfish" remote="aosp" revision="f20cca78fc06398de0701d0c5bba589c0fe2f738" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/mini-emulator-arm64" remote="aosp" revision="4f30226980039087b0d14de2c4dd0a1f37b9fd95" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" remote="aosp" revision="f41c1e4e10574399c6798d286c22d03471217691" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/mini-emulator-mips" remote="aosp" revision="3fdb24de40ca27da9a86f10f31314f2a13259db5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/mini-emulator-x86" remote="aosp" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/mini-emulator-x86_64" remote="aosp" revision="673aae8bd65d9708821c4062f6a0364a859e7ae4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/mips" remote="aosp" revision="bf07c7522e80eef53a58a49e5d05b8913d00d1a6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="device/generic/qemu" remote="aosp" revision="3f30d51baf8d3c8afe4a2510f78a69c51b112760" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/x86" remote="aosp" revision="81ce753ec0014fe404c4eec3ac6d04504356a638" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/generic/x86_64" remote="aosp" revision="138339be1da9b0f34befe3751b0bae874d7253db" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="device" name="device/google/accessory/arduino" remote="aosp" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="device" name="device/google/accessory/demokit" remote="aosp" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="device,fugu,broadcom_pdk,generic_fs" name="device/google/atv" remote="aosp" revision="7c939825540f6dcfd4b37932f0e0e0c6b10b4351" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="device/sample" remote="aosp" revision="efaef57573a7832b72b985749d0e01f0cf93b71c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" remote="aosp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" remote="aosp" revision="f8ed7d3f0ea87b3fc1aa72859386c82d8d9bdbd4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="platform/developers/build" path="developers/build" remote="aosp" revision="c7b3164ea6897f12e502e0c42b93b02035c8f2b7" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="platform/developers/samples/android" path="developers/samples/android" remote="aosp" revision="049d382f23bae257d8cf2dd2303eb2c3a166b932" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/docs/source.android.com" path="docs/source.android.com" remote="aosp" revision="918070543c8989f1088953e525a22176eb00caa0" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/aac" path="external/aac" remote="aosp" revision="2d435aa43323935bd8ed293f4f12cddfdee81eb3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/androidplot" path="external/androidplot" remote="aosp" revision="c66727ebf001607cee14521c35bc852b55fd9845" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ant-glob" path="external/ant-glob" remote="aosp" revision="0f189400fd2a36bf11bfb058e7f3917eb7ed163a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/antlr" path="external/antlr" remote="aosp" revision="47997265eeb7d954a32ece693bbe6dab740872dd" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/apache-commons-math" path="external/apache-commons-math" remote="aosp" revision="dee0849a9704d532af0b550146cbafbaa6ee1d19" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/apache-harmony" path="external/apache-harmony" remote="aosp" revision="f8670f3c29626892e32d30aa00ce8e4b94bd9609" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/apache-xml" path="external/apache-xml" remote="aosp" revision="0b013a482e4f4de9add850e34dbe5119fc390596" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/bison" path="external/bison" remote="aosp" revision="c2418b886165add7f5a31fc5609f0ce2d004a90e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/blktrace" path="external/blktrace" remote="aosp" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff" remote="aosp" revision="9d4448afbbbe00353ea05f3be091535885e2e155" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/bzip2" path="external/bzip2" remote="aosp" revision="707c3f0f5be01253da553f1449a476bd15240c2e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/cblas" path="external/cblas" remote="aosp" revision="0ab3e6274f109964d912c83ecd6abe6a3bf926c6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ceres-solver" path="external/ceres-solver" remote="aosp" revision="f7df5f6e4d77fa02a0b31bdfa1badaf678db9df6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/chromium-libpac" path="external/chromium-libpac" remote="aosp" revision="c1e2d09f531717e7d0e853a6ea34ac605279ca83" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace" remote="aosp" revision="0277072fd5a47dfd85a92406f4d5b2bcffff2cd8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview" remote="aosp" revision="a9031c91c9a428f18bdd9e52429a31484976fc54" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/clang" path="external/clang" remote="aosp" revision="6270ca65199882c73aa9699d8fbeb580870e8d30" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/cmockery" path="external/cmockery" remote="aosp" revision="77b7379c087dd5e6383aa502e36428adcdd46aab" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" remote="aosp" revision="3b1a2d532ed2c4444dbc7557784d6f4dfe15a90c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/conscrypt" path="external/conscrypt" remote="aosp" revision="87b44e33798faefca0d980abb9206fb92083da1c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/crcalc" path="external/crcalc" remote="aosp" revision="9666c57ab247046b716e9c1e56f0dcc7d4a1545f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/deqp" path="external/deqp" remote="aosp" revision="c509a7f07850a479acf88036a330ec191dd54ef8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/dexmaker" path="external/dexmaker" remote="aosp" revision="fec7276299b950a8831ead9a9756d27e0fc60560" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq" remote="aosp" revision="b955ca6befab20bc858dcaa6dc1f7f081725f2ac" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/doclava" path="external/doclava" remote="aosp" revision="77cd5e5e5065038ab04a8dee21012d42a81458a4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/donuts" path="external/donuts" remote="aosp" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="drm_gralloc" name="platform/external/drm_gralloc" path="external/drm_gralloc" remote="aosp" revision="47e7aba999eeca7b2db97ca388bc9c42524eec8e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="drm_hwcomposer" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" remote="aosp" revision="e3141c6fa66806f55fed65c83ed0c2c0201490e0" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/droiddriver" path="external/droiddriver" remote="aosp" revision="72a40802f8e7d24a3175e09adc4b44a89df54f38" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/easymock" path="external/easymock" remote="aosp" revision="bb9f1a648bd829540d7be08432e8f3142a076f64" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder" remote="aosp" revision="076f46888ed346775b8efc564d7694063ef5eea7" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eclipse-windowbuilder" path="external/eclipse-windowbuilder" remote="aosp" revision="a5f3ee137e94737538ec3bdf9b3716765d178c17" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/eigen" path="external/eigen" remote="aosp" revision="1ba7f856248f3d72a4549722b6c80dd6fde4abf5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/embunit" path="external/embunit" remote="aosp" revision="336b7c65098af0d1be69f2db55f4e75342d73b3f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/emma" path="external/emma" remote="aosp" revision="0daf3e00b0c58391e1a58ceeeb20fbde8dd2f95a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/esd" path="external/esd" remote="aosp" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/expat" path="external/expat" remote="aosp" revision="e5aa0a2cb0a5f759ef31c0819dc67d9b14246a4a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eyes-free" path="external/eyes-free" remote="aosp" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/fdlibm" path="external/fdlibm" remote="aosp" revision="a80590655471025cfdbbd1328afc3ae5e6feab6a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/fio" path="external/fio" remote="aosp" revision="b9da4221fd8a628a696d70c33ba1e7e8cc00a8fe" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/fonttools" path="external/fonttools" remote="aosp" revision="fe6c510afddcf7f5d980b49e4398dc31953b43d3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/freetype" path="external/freetype" remote="aosp" revision="ec62c527eb34ee4481a0153ceb42dfd35d7e1d26" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" remote="aosp" revision="9b8f8602a74a943ddc356bb11c55b4998b2b386d" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/glide" path="external/glide" remote="aosp" revision="ce1d390fbf0d4cad74dacdc55c0f6b1f98ae5cb1" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="dragon" name="platform/external/google-breakpad" path="external/google-breakpad" remote="aosp" revision="7e61ab71172b9e0d477f16a5e3b3ec32f866d1a6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" remote="aosp" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" remote="aosp" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" remote="aosp" revision="bce2136662854076023066602526ba299e6556b2" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" remote="aosp" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" remote="aosp" revision="2c2109e246e439f977e366ec78de0b147b06bb60" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/gtest" path="external/gtest" remote="aosp" revision="e826aa4f99cf7d9e57fe9668e299a2808674ede4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/hamcrest" path="external/hamcrest" remote="aosp" revision="3e8fd451fb787fb392767a54f20a81117ffd99ff" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" remote="aosp" revision="240563d28c19abb7b20e5b91495066f56a804a2b" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" remote="aosp" revision="c15709c28e9623c1937038f08af603c492901cbd" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/iputils" path="external/iputils" remote="aosp" revision="fdf8e83818340ee2efa54654fb294da919d1a4b1" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jack" path="external/jack" remote="aosp" revision="5ceb2025ac5d25ed48183ac2d3dac4691fe761fb" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/jarjar" path="external/jarjar" remote="aosp" revision="41c2bca43edfc197c3c67619115b9a70d9227008" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/javasqlite" path="external/javasqlite" remote="aosp" revision="1a0103df03484c022003b17e320746db3473ccd2" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/javassist" path="external/javassist" remote="aosp" revision="9566207cff5871c672fac1f0d4332d93292036d7" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jdiff" path="external/jdiff" remote="aosp" revision="0860aaa8b3cd01b42407009ffe4e0697ef0c1356" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/jetty" path="external/jetty" remote="aosp" revision="7bed9286f5ae2b2fc89dbcdd62cec570e58b99c4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/jhead" path="external/jhead" remote="aosp" revision="5c8f937269957e6651383e988006824781fd021a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jmdns" path="external/jmdns" remote="aosp" revision="f4eb7466d5c09098f9dc54137ed3235e3c43fc9f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jmonkeyengine" path="external/jmonkeyengine" remote="aosp" revision="a6b44658eb1c55295f132a36233a11aa2bd8f9cf" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jsilver" path="external/jsilver" remote="aosp" revision="b37fdc8f180ef5a79342b8a1d6698f1dce75aa39" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/jsmn" path="external/jsmn" remote="aosp" revision="27b5a35db0630b86791fa037a12da7b37c2aab49" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jsoncpp" path="external/jsoncpp" remote="aosp" revision="bc9a1127157bc00c01a1e106e98e7cd24c41f780" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jsr305" path="external/jsr305" remote="aosp" revision="ed2d3938efee97e6316b849759dc913cbc831f95" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/junit" path="external/junit" remote="aosp" revision="7e5a2e79b848a8c0373d65f2324f5f999a458518" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/kernel-headers" path="external/kernel-headers" remote="aosp" revision="bed0ffadd7316307a87a7126349a7b59b924e4fd" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ksoap2" path="external/ksoap2" remote="aosp" revision="f13853ff0fa5eb65afc847176e55ca6db293eb3c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libcap-ng" path="external/libcap-ng" remote="aosp" revision="52447887e50b49f33f959077c31232edff6659d8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libcxx" path="external/libcxx" remote="aosp" revision="076df933eb2d98152218b874abfa91cba660bcbd" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libcxxabi" path="external/libcxxabi" remote="aosp" revision="b451069aab57ccfe64c0fc7a18cfc487862fe985" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libdrm" path="external/libdrm" remote="aosp" revision="93b1c6466800f6b1b1621b12256913d615175d26" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/libedit" path="external/libedit" remote="aosp" revision="315dded283ebd8627b4968d761b0c29bc241d7a3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libexif" path="external/libexif" remote="aosp" revision="fa0c1e7d954230cd29d896e6015314b2f68ad7bd" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" remote="aosp" revision="1e26679795597459732408891bedea130b3ee1f1" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/libhevc" path="external/libhevc" remote="aosp" revision="d8ef5fd60eba95d50ce77e41a1efbe3f9efa2554" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/liblzf" path="external/liblzf" remote="aosp" revision="6946aa575b0949d045722794850896099d937cbb" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2" remote="aosp" revision="70d01da7913e9e8ab1d5264637262495d50759f8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libmtp" path="external/libmtp" remote="aosp" revision="e204c41bf49cadc1de460f0cf902008955b356d9" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libnl" path="external/libnl" remote="aosp" revision="19c48c82efd448e310e8151af749c5f6ec5d321b" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libogg" path="external/libogg" remote="aosp" revision="e4375ffe5491c4742bec47ae5468a9df5ffc3528" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libopus" path="external/libopus" remote="aosp" revision="1391dbf0ccd121ce7a49d30e2142d36c8d404990" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/libpcap" path="external/libpcap" remote="aosp" revision="c442bf68e06f961ad0f8fc5a7d19e0984985ea30" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libphonenumber" path="external/libphonenumber" remote="aosp" revision="52e2840e86facf8cd64e032fb1d8c70d071f653a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libselinux" path="external/libselinux" remote="aosp" revision="943ed44a46ed95d557bf552b57fe61280a77489c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libunwind" path="external/libunwind" remote="aosp" revision="338c9755cfe3d009c3dfff7d108e2c3ddaa6f3bb" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libusb" path="external/libusb" remote="aosp" revision="3a36cef7ef847d3839090a7c98eb961a602af55b" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libusb-compat" path="external/libusb-compat" remote="aosp" revision="6d4ab8939e4784b2b6eb63d992cc4d44f953bb41" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libutf" path="external/libutf" remote="aosp" revision="7469493bff47a84a6041cba80df50bbbe08cd656" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvncserver" path="external/libvncserver" remote="aosp" revision="54fc82147d8ea715bf2864246453d325bf546608" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvorbis" path="external/libvorbis" remote="aosp" revision="61a5b54ff699f0cd339121c14432d0d2517907b1" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/libvpx" path="external/libvpx" remote="aosp" revision="41607d2715374e87148a03b3165cdc013d731a42" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvterm" path="external/libvterm" remote="aosp" revision="6d78f36633063dad0689ca42be1ad8d0313ebfab" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="libyuv,pdk-cw-fs,pdk-fs" name="platform/external/libyuv" path="external/libyuv" remote="aosp" revision="613f94db72ea295b8e7040f508ea0bbb782714a2" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/linux-tools-perf" path="external/linux-tools-perf" remote="aosp" revision="1f1e9247c2356a325ed1e3af4cd05d693e707809" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/littlemock" path="external/littlemock" remote="aosp" revision="a3ea6bf9e6fcf63b69f5635b2ecc1fbd9a9a4dfc" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/lld" path="external/lld" remote="aosp" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/lldb" path="external/lldb" remote="aosp" revision="cf26fc9c6ac98ee27b605435b06795a37ed61169" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/llvm" path="external/llvm" remote="aosp" revision="039ace80c6746a215b3ea7403e60183f4ce78239" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ltrace" path="external/ltrace" remote="aosp" revision="09d9b8fca15daeb8f87dbbbc6b82ad83c3495341" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/marisa-trie" path="external/marisa-trie" remote="aosp" revision="629ed059b1e85cd8e4de363d8b3dc53c15c3e08a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/markdown" path="external/markdown" remote="aosp" revision="6f2e3554ae38cc90518d32e02cb57d05988270a6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" remote="aosp" revision="0aa655892286defb098d3eef7be19da59bcd3f32" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mesa3d" path="external/mesa3d" remote="aosp" revision="cfa14c46594a66e3f1b6b50b65b5e9f4fa6302a5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/messageformat" path="external/messageformat" remote="aosp" revision="a88391404bcb7f994675db3e508697cf96dbaf23" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/mockftpserver" path="external/mockftpserver" remote="aosp" revision="00dc7bdcf1df9e86789d963984dfc6912a8854c6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mockito" path="external/mockito" remote="aosp" revision="c7d7be3cdbefd99229903414cf71308f47973aa5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mockwebserver" path="external/mockwebserver" remote="aosp" revision="6c9ca4c4097e6f6e1296fafb8dcc5fc66a2f21cc" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mp4parser" path="external/mp4parser" remote="aosp" revision="16051e950485c6b62127c0446a760111de1a0cb9" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mtpd" path="external/mtpd" remote="aosp" revision="acfaed8bf7d1928ecb1e15b56497ba5da885101d" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/nanohttpd" path="external/nanohttpd" remote="aosp" revision="2aa25f6af65e07f4c1ce167e2de2aaee2f0cffe8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/nanopb-c" path="external/nanopb-c" remote="aosp" revision="7e7f2e9122af6c7e7e7d4ba205fdf46d50b95eef" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/naver-fonts" path="external/naver-fonts" remote="aosp" revision="91e6e9f94d1d769a8f742649674149ba98ce7d45" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/netcat" path="external/netcat" remote="aosp" revision="b023a43765b15f0b0fd5b52b7d8021f515c59c23" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/netperf" path="external/netperf" remote="aosp" revision="27ffe986a2933b1ff0eecbcc51a807d130e254ec" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/neven" path="external/neven" remote="aosp" revision="b212725fe71ed9ce8d0adda92fc43030337bd48a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nfacct" path="external/nfacct" remote="aosp" revision="6f7aae0264821b44e9fe80fb5596c525d3e2f475" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nist-pkits" path="external/nist-pkits" remote="aosp" revision="2c243d61d94b93eaef6fd5e0f727c9a2be838338" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nist-sip" path="external/nist-sip" remote="aosp" revision="b23dbfce7ea84c39cea75b612868a5832cb9af2b" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/noto-fonts" path="external/noto-fonts" remote="aosp" revision="42d158f3f68a0f61b6a8ec13d115ea8d20394324" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/oauth" path="external/oauth" remote="aosp" revision="bc170f58de82000ed6460f111686a850a1890c07" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/objenesis" path="external/objenesis" remote="aosp" revision="2a7655c0d503fcf5989098f65bf89eae78c32e5a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/opencv" path="external/opencv" remote="aosp" revision="70a06ce5365b0248e0ad39df681d6c934d3618f3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/openfst" path="external/openfst" remote="aosp" revision="d329901723ef29099659d9b955c5580de686fd6d" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/openssh" path="external/openssh" remote="aosp" revision="cfb649f16fb638fa1c8c7e4cc229ce547dfa14d6" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" remote="aosp" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/parameter-framework" path="external/parameter-framework" remote="aosp" revision="771d851381eebcf3a47a368b6a307aa5d4121ea8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/pcre" path="external/pcre" remote="aosp" revision="0d3d4875d4e672ab52cfd421da9a7fddbbaecda3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/pdfium" path="external/pdfium" remote="aosp" revision="e6986e1e8d4a57987f47c215490cb080a65ee29a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" remote="aosp" revision="6180b684fac1cdd3d8fbb69d755be6ca540d0826" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/regex-re2" path="external/regex-re2" remote="aosp" revision="9a16eac809c3bbb746f055b38d4e0d5c4f228c73" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/replicaisland" path="external/replicaisland" remote="aosp" revision="99e2e54c5d036048caf09bb05eea0969de093104" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/robolectric" path="external/robolectric" remote="aosp" revision="f522a207e60af3e8cf895e681fb25278219dc11c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/roboto-fonts" path="external/roboto-fonts" remote="aosp" revision="f5cf79102af594c746627b392b4f98eedd254571" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" remote="aosp" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" remote="aosp" revision="72691396f9fa84fd39cb72d031750e580e648aa3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/selinux" path="external/selinux" remote="aosp" revision="7d48e4a4a2c77a7cbb8f74af34c85563c2c1d81c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" remote="aosp" revision="a01a58c85ae6f0b1fe97e4a383bb7536285264d8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/external/slf4j" path="external/slf4j" remote="aosp" revision="7122d7eba20aeeaf319017b655271889f825f750" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/smali" path="external/smali" remote="aosp" revision="15284127c9ed241f1de20fdd8cdb24cb12cd2119" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/sonic" path="external/sonic" remote="aosp" revision="10c16fc60582d7e8bcf7533793871485d339e241" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" remote="aosp" revision="1a710ff698178fbf71251395c4c96e3e7e73e2ed" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/srtp" path="external/srtp" remote="aosp" revision="8756a774806ed44bc4e185a7a5a253f3dfbdc2e7" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/tagsoup" path="external/tagsoup" remote="aosp" revision="45e8185b55dfaee6d9cfc487708e787b5b7c3770" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/tcpdump" path="external/tcpdump" remote="aosp" revision="b5d6f230d44e96d2ac9cbd7f6bb2862fa88a60c4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/timezonepicker-support" path="external/timezonepicker-support" remote="aosp" revision="99e91a76fd74bad10266623d67cdb98d011f709e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/tinyxml" path="external/tinyxml" remote="aosp" revision="143125ff631c481d590cae0d7cc9ccfaaca269c7" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" remote="aosp" revision="e97cf75293741179dbbba302db2327dd7d43756d" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/v8" path="external/v8" remote="aosp" revision="57a14c9a8621270b0e6c697dce28a9c453ebe55f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/valgrind" path="external/valgrind" remote="aosp" revision="4e88b3458976a7132fe2b78392ebf9348a42a9f9" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="vboot" name="platform/external/vboot_reference" path="external/vboot_reference" remote="aosp" revision="10ebdb2ed235c5fc70d72ba11c7e7d2caf4b3296" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/vixl" path="external/vixl" remote="aosp" revision="dc661669ef2e2fd18c4e21333d6a12112b520436" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/vogar" path="external/vogar" remote="aosp" revision="e40f8ded5b78b68b992938c497309b6dbcd7f462" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/external/webrtc" path="external/webrtc" remote="aosp" revision="d0e536147e32121b3c3d609216d04283fcf520a5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/xmlwriter" path="external/xmlwriter" remote="aosp" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" remote="aosp" revision="42ea4dc6d1fc2206a7778029070ed9213e3b0fbf" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/zopfli" path="external/zopfli" remote="aosp" revision="bb96afe13a50bfc17259dcf56f44e997923c705c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/zxing" path="external/zxing" remote="aosp" revision="d2256df36df8778a3743e0a71eab0cc5106b98c9" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" remote="aosp" revision="b7f05114e5f408479b50647837cdf25187bfd164" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" remote="aosp" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" remote="aosp" revision="83d9692ee33de81b19738356a342682593686c34" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/data-binding" path="frameworks/data-binding" remote="aosp" revision="8b7340d0b2e57d5a3d71135f778b7f90e274a5f3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" remote="aosp" revision="8d069cf9807027f7b3148589292f8f0544179ebf" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ml" path="frameworks/ml" remote="aosp" revision="e0721529b9662b5ffb6cc7daf5b097720f5eb3e8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" remote="aosp" revision="805db15e4d7baa57062ad08fb03eeac8691475c8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" remote="aosp" revision="856e2a9d72fe3a79cd7bfa5cf443d13a60495c4b" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" remote="aosp" revision="03b18577f8f8f799e87a62b8e03889ddacf6daa2" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" remote="aosp" revision="b1670808057b3c88a5b1b650146a440c75802348" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" remote="aosp" revision="709f713ebcd62c61defc270d945810efca179621" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" remote="aosp" revision="3baece9b20fa480da46d860acd7320fd9eee3386" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" remote="aosp" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" remote="aosp" revision="4877ed122ed52095c86088c1d7122eae1aaab329" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" remote="aosp" revision="e9679af63f2ff0f4ae97316cbafbe80b3a78370e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" remote="aosp" revision="b67bf196fef5832f45a08e249c7cc99845da41ec" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/volley" path="frameworks/volley" remote="aosp" revision="82462cd0a0d7fa58d5497c39534380ad3987fdd1" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="platform/hardware/akm" path="hardware/akm" remote="aosp" revision="85837c2e77e032a834121ec3b9b6128f691d68a8" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/audio_media" path="hardware/intel/audio_media" remote="aosp" revision="218f0d6bc9532d0b707ea325fd96998249fe47bf" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/bootstub" path="hardware/intel/bootstub" remote="aosp" revision="90981c0c7c7f9f7488bbf0a776a824bed31c6f81" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/bd_prov" path="hardware/intel/common/bd_prov" remote="aosp" revision="8af329f2d2b54dfcfa84051d3ce1fae95f79011a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/libmix" path="hardware/intel/common/libmix" remote="aosp" revision="68e939ffa64c34bef2272cfe6346f43ee84d1611" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/libstagefrighthw" path="hardware/intel/common/libstagefrighthw" remote="aosp" revision="690809fcb1c7fc7042bd99a7521ad0608b20ba03" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/libva" path="hardware/intel/common/libva" remote="aosp" revision="bb5b2001f9093d0c6e50639bc98db15b0418ef43" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/libwsbm" path="hardware/intel/common/libwsbm" remote="aosp" revision="ac747113d4f6739b1462ca7fb40f2091691e209b" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/omx-components" path="hardware/intel/common/omx-components" remote="aosp" revision="e140b31fbde8b3e9da99de2c094b80e37e47444c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/utils" path="hardware/intel/common/utils" remote="aosp" revision="b2615f1e02eb59b78a9af088ea40299cd0526ff0" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/common/wrs_omxil_core" path="hardware/intel/common/wrs_omxil_core" remote="aosp" revision="64a9b8fb6b6c6538b1bf1d4b1c9f22ca139093a9" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/img/psb_headers" path="hardware/intel/img/psb_headers" remote="aosp" revision="eecb5f24ecb6e09fe1b27bad76c73e333a83a336" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel" name="platform/hardware/intel/img/psb_video" path="hardware/intel/img/psb_video" remote="aosp" revision="cf82d4e3f5d063a5a284662052cbbc6f124f37e3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="intel_sensors" name="platform/hardware/intel/sensors" path="hardware/intel/sensors" remote="aosp" revision="68dc9e70b79dacddc4e0bf00af0de7f764b04eed" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="marvell_bt" name="platform/hardware/marvell/bt" path="hardware/marvell/bt" remote="aosp" revision="3f33d194e8300816b94d1d7b68b1d48c8f903251" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="mediatek,mediatek_wear" name="platform/hardware/mediatek" path="hardware/mediatek" remote="aosp" revision="84eac90753d5c99bc0b05df34c400d1f58c01213" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="qcom_msm8960" name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960" remote="aosp" revision="c25a431842a26b5756b58a9d4a42c776e0457ba2" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="qcom_msm8994" name="platform/hardware/qcom/msm8994" path="hardware/qcom/msm8994" remote="aosp" revision="69933adf48c9ce31d716740d0d48c1515894c086" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="qcom_msm8x26" name="platform/hardware/qcom/msm8x26" path="hardware/qcom/msm8x26" remote="aosp" revision="8b098e346cf0899037c10e3a2e7846a7014f0f1f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="qcom_msm8x27" name="platform/hardware/qcom/msm8x27" path="hardware/qcom/msm8x27" remote="aosp" revision="8ff5c0057cbdecfa09410c1710ba043e191a2862" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,qcom_msm8x74" name="platform/hardware/qcom/msm8x74" path="hardware/qcom/msm8x74" remote="aosp" revision="2b96ffd283fd14d7d153b6b66680da98548679fd" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="qcom_msm8x84" name="platform/hardware/qcom/msm8x84" path="hardware/qcom/msm8x84" remote="aosp" revision="582b414269d8472d17eef65d8a8965aa8105042f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="omap3" name="platform/hardware/ti/omap3" path="hardware/ti/omap3" remote="aosp" revision="40292fb9eeb2cf0bb95dc818da12ddcae40b931c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="omap4-aah" name="platform/hardware/ti/omap4-aah" path="hardware/ti/omap4-aah" remote="aosp" revision="80bb3b85334de55efaf304b421602bbc7239fc97" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="generic_fs" name="platform/ndk" path="ndk" remote="aosp" revision="e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" remote="aosp" revision="01e429c08e51291315890de9677151a7e0b6ad35" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/pdk" path="pdk" remote="aosp" revision="708589163e790eb3a7fec09f4832a0f78999bdf3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="platform/platform_testing" path="platform_testing" remote="aosp" revision="e34a2bff00c14722e240edce7ec7e6acd2713213" upstream="refs/tags/android-6.0.1_r22"/>
+  <project clone-depth="1" groups="pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" remote="aosp" revision="b728a257b2a06f1d18b7349dc2e90bebd013bbd4" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" remote="aosp" revision="3c60fb5744ce4fbde988fbc24e38a8d9e5a58e59" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" remote="aosp" revision="95af4fa4778f2a58b631388d90c02a877b4d9be3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" remote="aosp" revision="d7638b6496f75e896badacddb40a9dd018553bfc" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse" remote="aosp" revision="cf9f78f8cf41b16edf9f712598a42743d5cea4af" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" remote="aosp" revision="3344adbe898ae092b7bcc7c1f69d89980e39cbf2" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" remote="aosp" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" remote="aosp" revision="7a80f8db4e0bd43e2ef53515cdb8f117cc65e9e0" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" remote="aosp" revision="8834958755acc291d126ba7ee38ac731d04f9c9e" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" remote="aosp" revision="c66f0d207f430da9b45df9b3f1cc52af225d305c" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" remote="aosp" revision="ba8d2d6a9c96e1b17103c6bbf854cfce4b4803d3" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="aosp" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="aosp" revision="a0cb3720e4047bade36f8cfac84ea94715313a89" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" remote="aosp" revision="63b209feac0b045f5fc68810fd2e65bf1ca51e2f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="f61a459478cdc31e8aae22a182cdbf814ba08012" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="aosp" revision="f691cae2f256d5f72388c0ce9113007a53ad333a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" remote="aosp" revision="9ceb135814c47cad4858083228fd9615aaaa7c84" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" remote="aosp" revision="3c6dc0e9c16b4ed1ff43aef82a4bbec739aadcff" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" remote="aosp" revision="e5300c340e84717f22f044d55b278b2eb2b38cf0" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" remote="aosp" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" remote="aosp" revision="f2983ee601d2430010e5e274764ad01306f22dd7" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" remote="aosp" revision="c2e2a8185813256b0d16778e92cc3fb72a975d63" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" remote="aosp" revision="ed603f9b7893442321e50d96bf226c27da1c279a" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="darwin,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" remote="aosp" revision="0b1ee9ec23565fd52a6f20d996a16977d0fa7ead" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" remote="aosp" revision="f63d822b31f41bc1be234ad64a7f09de9221444f" upstream="refs/tags/android-6.0.1_r22"/>
+  <project clone-depth="1" groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" remote="aosp" revision="f7cfc2cca15736862e45ebef54776e0dfdffeb16" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" remote="aosp" revision="8780b5256c0c0b0faa3d699abb02feda52e52ea0" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" remote="aosp" revision="27ffdfa0b17baf2e5a95c54060bd741859dd2448" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" remote="aosp" revision="c78d07c6e964f23dc12ba739aff49ff1bf74b323" upstream="refs/tags/android-6.0.1_r22"/>
+  <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" remote="aosp" revision="3c4cbf7f9434f54f8d306c059fcb7007ecb4a937" upstream="refs/tags/android-6.0.1_r22"/>
+  <project name="usmcamgrimm/vendor_lge_d800" path="vendor/lge/d800" remote="roomservice" revision="1b382b9486ad928c90f80adf4831bc924cb3b803" upstream="EXODUS-6.0"/>
+</manifest>
